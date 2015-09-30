@@ -1,0 +1,16 @@
+
+body {
+    padding-top: 70px;
+}
+
+.divider {
+    width: 100%;
+    border-top: #EEEEEE 1px solid;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
