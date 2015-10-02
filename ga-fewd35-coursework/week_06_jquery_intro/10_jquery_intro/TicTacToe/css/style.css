@@ -1,0 +1,17 @@
+.small-container {
+    padding-top: 100px;
+    max-width: 450px;
+}
+
+.square {
+    height: 150px;
+    border: #000 1px solid;
+    text-align: center;
+    font-size: 100px;
+    line-height: 150px;
+}
+
+/*  Set the line-height to equal the height of the box, and it will be centered.
+*/
+
+
