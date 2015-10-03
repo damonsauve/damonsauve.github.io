@@ -11,6 +11,10 @@
     line-height: 150px;
 }
 
+#restart {
+    margin-top: 20px;
+}
+
 /*  Set the line-height to equal the height of the box, and it will be centered.
 */
 

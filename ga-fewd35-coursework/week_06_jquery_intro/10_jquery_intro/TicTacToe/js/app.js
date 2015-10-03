@@ -1,5 +1,4 @@
-
-// Original JS way.
+// The JS way.
 // document.addEventListener("DOMContentLoaded", function () {});
 
 // The jQuery way; good practice. Wait for DOM to get loaded.
@@ -23,6 +22,10 @@ $(document).ready(function() {
     // Click event.
     //
     $(document).on("click", ".square", function () {
+
+        $(document).on("click", "#restart", function() {
+            location.reload();
+        });
 
         if (isGameOver() || isMaxTurns()) {
 
