@@ -1,49 +1,65 @@
 // The JS way.
-// document.addEventListener("DOMContentLoaded", function () {});
+// document.addEventListener("DOMContentLoaded", function() {});
 
 // The jQuery way; good practice. Wait for DOM to get loaded.
 //
 $(document).ready(function() {
 
+    // keep track of turns.
+    //
     var maxTurns = 9;
     var totalTurns = 0;
 
+    // static vars, sorta.
+    //
     var ex = 'X';
     var oh = 'O';
 
+    // game starts with player X.
+    //
     var currentPlayer = ex;
 
+    // brute-force method to keep track of squares.
+    //
     var row1 = [];
     var row2 = [];
     var row3 = [];
 
+    // boolean to enforce end of game.
+    //
     var gameOver = false;
 
     // Click event.
     //
     $(document).on("click", ".square", function () {
 
+        // simple button to reload page.
+        //
         $(document).on("click", "#restart", function() {
             location.reload();
         });
 
+        // alert if game is over or all squares filled.
+        //
         if (isGameOver() || isMaxTurns()) {
 
             alert('Game over!');
 
         } else {
 
-            var squareValue = $(this).html();
-
-            if (isEmptySquare(squareValue)) {
+            // make sure square is empty.
+            //
+            if (isEmptySquare($(this).html())) {
 
                 // console.log('currentPlayer -> ' + currentPlayer);
 
+                // get row ID.
+                //
                 var rowId = $(this).parent().attr("id");
 
                 // console.log('rowId -> ' + rowId);
 
-                // Get ID value.
+                // get ID value.
                 //
                 var squareID = this.id;
 
@@ -53,8 +69,12 @@ $(document).ready(function() {
                 //
                 setSquare(--rowId, --squareID);
 
+                // fill square with value of currentPlayer.
+                //
                 $(this).html(currentPlayer);
 
+                // check if current player has made a winning move.
+                //
                 if (checkForWin()) {
 
                     gameOver = true;
@@ -63,11 +83,15 @@ $(document).ready(function() {
 
                 } else {
 
+                    // set next player.
+                    //
                     currentPlayer = setNextPlayer();
 
+                    // increment turns.
+                    //
                     totalTurns++;
 
-                    console.log('totalTurns -> ' + totalTurns);
+                    // console.log('totalTurns -> ' + totalTurns);
                 }
 
             } else {
@@ -112,6 +136,8 @@ $(document).ready(function() {
         // console.log("setSquare row: " + row);
         // console.log("setSquare col: " + col);
 
+        // build out simple arrays for each row.
+        //
         if (row === 0) {
 
             row1[col] = currentPlayer;
@@ -129,10 +155,9 @@ $(document).ready(function() {
             console.log('no match');
         }
 
-        console.log(row1);
-        console.log(row2);
-        console.log(row3);
-
+        // console.log(row1);
+        // console.log(row2);
+        // console.log(row3);
     }
 
     function checkForWin() {
