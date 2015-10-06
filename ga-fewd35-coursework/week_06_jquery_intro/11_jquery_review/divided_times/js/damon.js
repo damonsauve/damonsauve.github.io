@@ -2,86 +2,80 @@ $(document).ready(function() {
 
     $('li').click( function(event) {
 
-        // prevent browser from loading internal links.
+        console.clear();
+
+        // Prevent browser from loading internal links.
         // http://api.jquery.com/event.preventdefault/
         //
         event.preventDefault();
 
-        // for practice, init 'this' as variable.
+        // Get link from selected primary nav item.
+        // http://stackoverflow.com/questions/306583/this-selector-and-children
         //
-        var navSelected = $(this);
+        var thisLink = $(this).find('a')[0];
 
-        // get class name for selected nav menu.
+        // Extract link ID to match slide-down menu ID.
+        // Example: #politics-drop
         //
-        var navName = $(navSelected).attr("class");
+        var thisId = $(thisLink).attr('href');
 
-        // step 0: navName: international
-        // step 1: navName: international active
+        console.log('thisLink -> ' + thisLink);
+        console.log('thisId -> ' + thisId);
+
+        // Get all children of slide-down menu.
         //
-        console.log('navName: ' + navName);
+        var slideDownItems = $('#slide-down').children();
 
-        // toggle active class.
-        //
-        $(navSelected).toggleClass('active');
+        for (i = 0; i < slideDownItems.length; i++) {
 
-        // get list item siblings.
-        //
-        var navList = $(navSelected).siblings();
+            if ($(slideDownItems[i]).is(thisId)){
 
-        // loop through siblings.
-        //
-        for (i = 0; i < navList.length; i++) {
+                console.log('show slide-down menu -> ');
 
-            // if item is active, toggle class.
-            //
-            if ($(navList[i]).hasClass('active')) {
-
-                $(navList[i]).toggleClass('active');
-
-                // console.log(allListItems[i]);
-            }
-        }
-
-        // enable display for drop-down menu.
-        //
-        // $('#slide-down').css('display', 'block');
-
-        $("#slide-down").slideDown( "slow", function() {
-            // Animation complete.
-        });
-
-        // set class to open.
-        //
-        $('#slide-down').addClass('open');
-
-        // get all children of drop-down menu.
-        //
-        var dropDownItems = $('#slide-down').children();
-
-        for (i = 0; i < dropDownItems.length; i++) {
-
-            console.log(dropDownItems[i]);
-
-            // display the drop-down if item matches selected nav menu.
-            //
-            if ($(dropDownItems[i]).hasClass(navName)) {
-
-                console.log('matches');
-
-                $(dropDownItems[i]).css('display', 'block');
-
-                $(dropDownItems[i]).toggleClass('open');
+                // Show menu if it matches selected primary nav item.
+                //
+                $(slideDownItems[i]).show();
 
             } else {
 
-                console.log('doesnt match');
+                console.log('hide slide-down menu ->');
 
-                // otherwise, hide the drop-down menu for that item.
+                // Hide if not matched.
                 //
-                $(dropDownItems[i]).hide();
+                $(slideDownItems[i]).hide();
             }
+            console.log(slideDownItems[i]);
         }
 
-    });
+        // If selected list item is active currently,
+        //
+        if ( $(this).hasClass('active')) {
 
+            console.log('hide menu!');
+
+            // slide up nav menu
+            //
+            $('#slide-down').slideUp();
+
+            // and remove active class from entire menu.
+            //
+            $('#primary-nav li').removeClass('active');
+
+        } else {
+
+            console.log('show menu!');
+
+            // Otherwise, slide down nav menu,
+            //
+            $('#slide-down').slideDown();
+
+            // remove active class from entire menu,
+            //
+            $('#primary-nav li').removeClass('active');
+
+            // and then add active class to selected item.
+            //
+            $(this).addClass('active');
+        }
+    });
 });
