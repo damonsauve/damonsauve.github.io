@@ -1,0 +1,9 @@
+
+@media (max-width: 768px) {
+    /*
+     * Trigger for mobile-response changes.
+    */
+    .logo {
+        text-align:center;
+    }
+}
