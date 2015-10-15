@@ -1,0 +1,26 @@
+# sublime files
+#
+**/*.sublime-project
+**/*.sublime-workspace
+
+# ignore these dirs.
+#
+template/
+week_02_css_basics/grid_sytem
+week_03_more_layout/testing_positioning
+week_04_advanced_layout/jumbotron_narrow
+week_04_advanced_layout/bootstrap_testing
+week_04_advanced_layout/shakespeares_plays
+week_05_js_intro/08_js_basics/js_testing
+week_05_js_intro/08_js_basics/Memory-master/
+week_05_js_intro/09_dom_manipulation/intro_to_DOM
+week_06_jquery_intro/10_jquery_intro/jQuery Testing
+week_06_jquery_intro/10_jquery_intro/shakespeares_plays
+week_06_jquery_intro/11_jquery_review/Animation Testing
+week_06_jquery_intro/11_jquery_review/gettysburg_address
+week_07_advanced_css_and_jquery/12_jquery_bootstrap/testing
+
+# reset cache:
+# git rm -r --cached .
+# git add .
+# git commit -m ".gitignore is now working"
