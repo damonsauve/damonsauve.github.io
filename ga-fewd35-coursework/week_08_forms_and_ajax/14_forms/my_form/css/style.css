@@ -1,0 +1,18 @@
+.submit-button {
+    text-align: center;
+    margin-top: 25px;
+}
+
+h1 {
+    font-style: italic;
+    text-align: center;
+}
+
+#my-form {
+    padding: 25px;
+}
+
+#messages {
+    color: red;
+    font-weight: bold;
+}
