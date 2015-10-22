@@ -10,4 +10,5 @@ View these exercises on <a href="http://damonsauve.github.io/index.html">my gith
 - <a href="http://damonsauve.github.io/ga-fewd35-coursework/week_06_jquery_intro/11_jquery_review/divided_times/index.html" target="_blank">Divided Times</a>
 - <a href="http://damonsauve.github.io/ga-fewd35-coursework/week_07_advanced_css_and_jquery/12_jquery_bootstrap/OrganizeMe/index.html" target="_blank">Organize Me!</a>
 - <a href="http://damonsauve.github.io/ga-fewd35-coursework/week_07_advanced_css_and_jquery/13_css_trickshots/header_redesign/header.html" target="_blank">Header Redesign</a>
-
+- <a href="http://damonsauve.github.io/ga-fewd35-coursework/week_08_forms_and_ajax/14_forms/my_form/index.html" target="_blank">My Form</a>
+- <a href="http://damonsauve.github.io/ga-fewd35-coursework/week_08_forms_and_ajax/15_ajax/wine_app/index.html" target="_blank">Wine API App</a>
