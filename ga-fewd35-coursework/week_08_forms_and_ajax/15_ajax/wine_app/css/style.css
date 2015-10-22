@@ -7,3 +7,8 @@
     text-align: center;
     margin-top: 25px;
 }
+
+#messages {
+    color: red;
+    font-weight: bold;
+}
