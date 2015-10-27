@@ -6,19 +6,24 @@
 # ignore these dirs.
 #
 template/
-week_02_css_basics/grid_sytem
-week_03_more_layout/testing_positioning
-week_04_advanced_layout/jumbotron_narrow
-week_04_advanced_layout/bootstrap_testing
-week_04_advanced_layout/shakespeares_plays
-week_05_js_intro/08_js_basics/js_testing
-week_05_js_intro/08_js_basics/Memory-master/
-week_05_js_intro/09_dom_manipulation/intro_to_DOM
-week_06_jquery_intro/10_jquery_intro/jQuery Testing
-week_06_jquery_intro/10_jquery_intro/shakespeares_plays
-week_06_jquery_intro/11_jquery_review/Animation Testing
-week_06_jquery_intro/11_jquery_review/gettysburg_address
-week_07_advanced_css_and_jquery/12_jquery_bootstrap/testing
+**/grid_sytem
+**/testing_positioning
+**/jumbotron_narrow
+**/bootstrap_testing
+**/shakespeares_plays
+**/js_testing
+**/Memory-master/
+**/intro_to_DOM
+**/jQuery Testing
+**/shakespeares_plays
+**/Animation Testing
+**/gettysburg_address
+**/testing
+**/form_validation
+**/form_validation
+**/ajax_testing
+**/user_manager_app
+
 
 # reset cache:
 # git rm -r --cached .
