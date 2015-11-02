@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Movie Title Search | Open Movie Database API</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="row border">
+        <div class="col-md-offset-2 col-md-10">
+            <h1>Open Movie Database API</h1>
+            <h2>Movie Title Search</h2>
+        </div>
+    </div>
+
+    <div class="row border">
+        <div class="col-md-offset-2 col-md-10">
+            <form id="movie-search-form" class="form-group">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="movie-title" placeholder="The Walking Dead">
+                </div>
+                <button type="submit" id="submit-form" class="btn btn">Find Title</button>
+                <button type="submit" id="clear-form" class="btn btn">Clear Form</button> <span id="search-messages"></span>
+            </form>
+        </div>
+    </div>
+
+    <div class="row border" id="search-head">
+        <div class="col-md-offset-2 col-md-10">
+            <h3>Search Results</h3>
+        </div>
+    </div>
+    <div id="search-results">
+        <script id="search-template" type="text/x-handlebars-template">
+            <div class="row search-item border">
+
+                {{#if Error}}
+                <div class="col-md-offset-2 col-md-10 border">
+                    <div class="error">{{Error}}</div>
+                </div>
+
+                {{else}}
+                <div class="col-md-offset-2 col-md-5 border">
+                    <h3>{{Title}}</h3>
+                    <div class="year">({{Year}})</div>
+
+                    <div class="spacer"></div>
+
+                    <div class="rating">{{Rated}}</div> |
+                    <div class="runtime">{{Runtime}}</div> |
+                    <div class="genre">{{Genre}}</div> |
+                    <div class="released">{{Released}}</div>
+
+                    <div class="spacer"></div>
+
+                    <div class="ratings">Ratings: <strong>{{imdbRating}}</strong>/10 </div>
+                    <div class="votes">from {{imdbVotes}} users</div>
+
+                    <div class="spacer"></div>
+
+                    <div class="plot">{{Plot}}</div>
+
+                    <div class="spacer"></div>
+
+                    <div class="director"><em>Director:</em> {{Director}}</div>
+                    <div class="writer"><em>Writer:</em> {{Writer}}</div>
+                    <div class="actors"><em>Actors:</em> {{Actors}}</div>
+
+                    <div class="spacer"></div>
+
+                    <div class="language">Language: {{Language}}</div>
+                    <div class="country">Country: {{Country}}</div>
+                    <div class="awards">Awards: {{Awards}}</div>
+
+                    <div class="spacer"></div>
+
+                    <div class="omdb-link">@OMDB: <a href="http://www.omdbapi.com/?i={{imdbID}}" target="_blank">{{imdbID}}</a></div>
+                </div>
+                <div class="col-md-5 border">
+                    <div id="poster"><img src="{{Poster}}">
+                    <div class="spacer"></div>
+                </div>
+
+                {{/if}}
+            </div>
+        </script>
+    </div>
+
+    <div class="footer"></div>
+</div>
+
+<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.3/handlebars.min.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+
+</body>
+</html>
