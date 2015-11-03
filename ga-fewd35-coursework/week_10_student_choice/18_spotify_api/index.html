@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Music Search | Spotify Web API</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="row border">
+        <div class="col-md-offset-2 col-md-10">
+            <h1>Spotify Web API</h1>
+            <h2>Music Search</h2>
+        </div>
+    </div>
+
+    <div class="row border">
+        <div class="col-md-offset-2 col-md-10">
+            <form id="search-form" class="form-group">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="query-string" placeholder="Lana Del Rey">
+                </div>
+                <input type="hidden" id="page-limit" value="">
+                <input type="hidden" id="page-offset" value="">
+                <button type="submit" id="submit-form" class="btn">Search Spotify</button>
+                <button type="submit" id="clear-form" class="btn">Clear Form</button> <span id="search-messages"></span>
+            </form>
+        </div>
+    </div>
+
+    <div class="row border" id="search-header">
+        <script id="search-header-template" type="text/x-handlebars-template">
+            <div id="search-head" class="col-md-offset-2 col-md-10">
+                <h3>Search Results</h3>
+                <p>Showing {{limit}} of {{total_results}} total search results.</p>
+            </div>
+        </script>
+    </div>
+
+    <div id="search-results">
+        <script id="search-results-template" type="text/x-handlebars-template">
+            <div class="row search-result border">
+
+                {{#if error}}
+                <div class="col-md-offset-2 col-md-10 border">
+                    <div class="error">{{error}}</div>
+                </div>
+
+                {{else}}
+                <div class="col-md-offset-2 col-md-5 border">
+                    <h3>{{name}}</h3>
+                    <h4>By {{artist}}</h4>
+                    <div class="album">Album: {{album}}</div>
+
+                    <div class="spacer"></div>
+
+                    <audio src="{{preview_url}}" controls>
+                    <p>Your browser does not support the <code>audio</code> element </p>
+                    </audio>
+
+                </div>
+                <div class="col-md-5 border">
+                    <img src="{{image_url}}" width="{{image_width}}">
+
+                    <div class="spacer"></div>
+                </div>
+
+                {{/if}}
+            </div>
+        </script>
+    </div>
+
+    <div class="row spacer border" id="search-footer">
+        <script id="search-footer-template" type="text/x-handlebars-template">
+            <div id="search-foot" class="col-md-offset-2 col-md-10">
+
+                {{#if previous_page}}
+                <a id="previous-page" class="btn btn-default" href="#" role="button">Previous {{limit}}</a>
+                {{/if}}
+
+                {{#if next_page}}
+                <a id="next-page" class="btn btn-default" href="#" role="button">Next {{limit}}</a>
+                {{/if}}
+
+            </div>
+        </script>
+    </div>
+
+</div>
+
+<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.3/handlebars.min.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+
+</body>
+</html>

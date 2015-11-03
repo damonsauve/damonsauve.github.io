@@ -1,0 +1,35 @@
+.border {
+    /*border: #000 1px solid;*/
+}
+
+#query-string {
+    width: 60%;
+}
+
+#search-messages {
+    color: red;
+}
+
+#search-messages,
+#search-header,
+#search-results,
+#search-footer {
+    display: none;
+}
+
+.runtime,
+.rating,
+.genre,
+.released,
+.ratings,
+.votes {
+    display: inline;
+}
+
+.error {
+    color: red;
+}
+
+.spacer {
+    padding: 10px;
+}
