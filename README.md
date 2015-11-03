@@ -13,3 +13,4 @@ View these exercises on <a href="http://damonsauve.github.io/index.html">my gith
 - <a href="http://damonsauve.github.io/ga-fewd35-coursework/week_08_forms_and_ajax/14_forms/my_form/index.html" target="_blank">My Form</a>
 - <a href="http://damonsauve.github.io/ga-fewd35-coursework/week_08_forms_and_ajax/15_ajax/wine_app/index.html" target="_blank">Wine API App</a>
 - <a href="http://damonsauve.github.io/ga-fewd35-coursework/week_09_apis_and_templating/16_templating/omdb_title_search/index.html" target="_blank">OMDB Title Search</a>
+- <a href="http://damonsauve.github.io/ga-fewd35-coursework/week_10_student_choice/18_spotify_api/spotify_api_search/index.html" target="_blank">Spotify API Search</a>
