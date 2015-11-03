@@ -97,10 +97,6 @@ $(document).ready(function() {
 
         offset = offset + limit;
 
-        // console.log('next query: ' + query);
-        // console.log('offset: ' + offset);
-        // console.log('limit: ' + limit);
-
         do_search(query, offset, limit);
     });
 
@@ -119,10 +115,6 @@ $(document).ready(function() {
         var limit = get_limit();
 
         offset = offset - limit;
-
-        // console.log('next query: ' + query);
-        // console.log('offset: ' + offset);
-        // console.log('limit: ' + limit);
 
         do_search(query, offset, limit);
     });
@@ -159,20 +151,33 @@ $(document).ready(function() {
         //
         var header_template = Handlebars.compile(header_source);
 
-        var limit;
+        var header_data;
 
-        // Showing 20 of 9 total search results.
-        //
-        if (data.tracks.limit >= data.tracks.total) {
-            limit = data.tracks.total;
-        } else {
-            limit = data.tracks.limit;
+        if (data.tracks.total > 0) {
+
+            var start = data.tracks.offset;
+            var limit = data.tracks.limit;
+
+            start++;
+
+            var stop = limit + data.tracks.offset;
+
+            // Showing 6 to 10 of 9 total search results.
+            //
+            if (stop >= data.tracks.total) {
+                stop = data.tracks.total;
+            }
+
+            // Showing {{start}} to {{stop}} of {{total_results}} total search results
+            //
+            header_data = {
+                'start': start,
+                'stop': stop,
+                'total_results': data.tracks.total
+            };
         }
 
-        var header_data = {
-            'total_results': data.tracks.total,
-            'limit': limit
-        };
+        // console.log(header_data);
 
         var header_html = header_template(header_data);
 
@@ -292,7 +297,7 @@ $(document).ready(function() {
         if (typeof limit !== 'undefined') {
             url += '&limit=' + limit;
         } else {
-            url += '&limit=' + 3;
+            url += '&limit=' + 5;
         }
 
         console.log('spotify api: ' + url);
