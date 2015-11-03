@@ -17,19 +17,14 @@
     display: none;
 }
 
-.runtime,
-.rating,
-.genre,
-.released,
-.ratings,
-.votes {
-    display: inline;
-}
-
 .error {
     color: red;
 }
 
 .spacer {
     padding: 10px;
+}
+
+#search-footer {
+    padding-bottom: 40px;
 }

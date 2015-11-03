@@ -291,6 +291,8 @@ $(document).ready(function() {
 
         if (typeof limit !== 'undefined') {
             url += '&limit=' + limit;
+        } else {
+            url += '&limit=' + 3;
         }
 
         console.log('spotify api: ' + url);

@@ -27,8 +27,8 @@
                 </div>
                 <input type="hidden" id="page-limit" value="">
                 <input type="hidden" id="page-offset" value="">
-                <button type="submit" id="submit-form" class="btn">Search Spotify</button>
-                <button type="submit" id="clear-form" class="btn">Clear Form</button> <span id="search-messages"></span>
+                <button type="submit" id="submit-form" class="btn btn-default">Search Spotify</button>
+                <button type="submit" id="clear-form" class="btn btn-default">Clear Form</button> <span id="search-messages"></span>
             </form>
         </div>
     </div>
@@ -54,7 +54,7 @@
                 {{else}}
                 <div class="col-md-offset-2 col-md-5 border">
                     <h3>{{name}}</h3>
-                    <h4>By {{artist}}</h4>
+                    <h4>Artist: {{artist}}</h4>
                     <div class="album">Album: {{album}}</div>
 
                     <div class="spacer"></div>
@@ -62,7 +62,6 @@
                     <audio src="{{preview_url}}" controls>
                     <p>Your browser does not support the <code>audio</code> element </p>
                     </audio>
-
                 </div>
                 <div class="col-md-5 border">
                     <img src="{{image_url}}" width="{{image_width}}">
@@ -75,9 +74,9 @@
         </script>
     </div>
 
-    <div class="row spacer border" id="search-footer">
+    <div class="row border" id="search-footer">
         <script id="search-footer-template" type="text/x-handlebars-template">
-            <div id="search-foot" class="col-md-offset-2 col-md-10">
+            <div id="search-foot" class="col-md-offset-2 col-md-10 border">
 
                 {{#if previous_page}}
                 <a id="previous-page" class="btn btn-default" href="#" role="button">Previous {{limit}}</a>
@@ -86,7 +85,6 @@
                 {{#if next_page}}
                 <a id="next-page" class="btn btn-default" href="#" role="button">Next {{limit}}</a>
                 {{/if}}
-
             </div>
         </script>
     </div>
