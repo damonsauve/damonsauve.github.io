@@ -79,20 +79,26 @@
 
     <div class="row border" id="search-footer">
         <script id="search-footer-template" type="text/x-handlebars-template">
-            <div id="search-foot" class="col-md-offset-2 col-md-10 border">
+            <div id="search-foot" class="col-sm-12 border">
+                <nav>
+                    <ul class="pager">
+                        {{#if previous_page}}
+                        <li><a id="previous-page" href="#">Previous {{limit}}</a></li>
+                        {{else}}
+                        <li class=" disabled"><a id="previous-page" href="#">Previous {{limit}}</a></li>
+                        {{/if}}
 
-                {{#if previous_page}}
-                <a id="previous-page" class="btn btn-default" href="#" role="button">Previous {{limit}}</a>
-                {{/if}}
-
-                {{#if next_page}}
-                <a id="next-page" class="btn btn-default" href="#" role="button">Next {{limit}}</a>
-                {{/if}}
+                        {{#if next_page}}
+                        <li><a id="next-page" href="#">Next {{limit}}</a></li>
+                        {{else}}
+                        <li class=" disabled"><a id="next-page" href="#">Next {{limit}}</a></li>
+                        {{/if}}
+                    </ul>
+                </nav>
             </div>
         </script>
     </div>
-
-</div>
+<div>
 
 <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
