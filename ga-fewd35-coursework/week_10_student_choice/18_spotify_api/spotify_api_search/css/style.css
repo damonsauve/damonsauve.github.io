@@ -21,6 +21,11 @@
     color: red;
 }
 
+img {
+    border: #666 1px solid;
+    margin-bottom: 20px;
+}
+
 .spacer {
     padding: 10px;
 }
