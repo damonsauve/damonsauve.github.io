@@ -32,13 +32,17 @@ $(document).ready(function() {
         //
         for (i = 0; i < navList.length; i++) {
 
+            console.log('sibling: ' + navList[i]);
+
             // if item is active, toggle class.
             //
             if ($(navList[i]).hasClass('active')) {
 
                 $(navList[i]).toggleClass('active');
 
-                // console.log(allListItems[i]);
+                console.log('sibling is active: ' + navList[i]);
+
+                break;
             }
         }
 
