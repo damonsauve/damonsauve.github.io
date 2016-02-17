@@ -1,15 +1,69 @@
+
+/*http://paletton.com/#uid=74e0X0k2ljc6hnI3vhb50fr6wdx*/
+/*http://paletton.com/#uid=34e0X0k2ljc6hnI3vhb50fr6wdx*/
+
+body {
+    background-color: #fff;
+    color: #5E2E2D;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
 img {
-    float: right;
+    /*float: right;*/
     margin-top: 0;
     margin-right: 0;
     margin-bottom: 20px;
-    margin-left: 20px;
+    margin-left: 30px;
     border: 1px solid #666;
     padding: 4px;
-    width: 250px;
+    width: 200px;
+    /*height: 200px;*/
 }
 
+dd, dt {
+    line-height: 1.5;
+}
+
+h4 {
+    font-weight: 600;
+}
 
 .border {
     /*border: #000 1px solid;*/
 }
+
+.container {
+    padding: 15px;
+}
+
+.level-1 {
+    background-color: #646269;
+    color: #b2b1b4;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+
+.level-2 {
+    background-color: #a5b08e;
+    color: #6d7361;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+
+.level-3 {
+    background-color: #fff;
+    color: #6c6056;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.footer-row {
+    border-width: 0px 5px 5px 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
