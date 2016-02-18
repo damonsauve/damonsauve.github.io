@@ -97,6 +97,48 @@ h4 {
 }
 
 
+/* Small devices (tablets, 768px and up) */
+/* iPad in portrait mode */
+@media (min-width : 768px) {
+
+    body {
+        font-size: 14px;
+        background-color: yellow;
+    }
+
+    img {
+        width: 230px;
+    }
+}
+
+/* Medium devices (desktops, 992px and up) */
+/* iPad in landscape mode */
+@media (min-width : 992px) {
+
+    body {
+        font-size: 14px;
+        background-color: green;
+    }
+
+    img {
+        width: 190px;
+    }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width : 1200px) {
+
+    body {
+        font-size: 14px;
+        background-color: blue;
+    }
+
+    img {
+        width: 230px;
+    }
+}
+
+
 /* http://stephen.io/mediaqueries/ */
 
 @media only screen
@@ -126,45 +168,3 @@ and (orientation : landscape) {
         width: 100px;
     }
 }
-
-/* Small devices (tablets, 768px and up) */
-/* iPad in portrait mode */
-@media (min-width : 768px) {
-
-    body {
-        font-size: 14px;
-        background-color: yellow;
-    }
-
-    img {
-        width: 220px;
-    }
-}
-
-/* Medium devices (desktops, 992px and up) */
-/* iPad in landscape mode */
-@media (min-width : 992px) {
-
-    body {
-        font-size: 14px;
-        background-color: green;
-    }
-
-    img {
-        width: 175px;
-    }
-}
-
-/* Large devices (large desktops, 1200px and up) */
-@media (min-width : 1200px) {
-
-    body {
-        font-size: 14px;
-        background-color: blue;
-    }
-
-    img {
-        width: 220px;
-    }
-}
-
