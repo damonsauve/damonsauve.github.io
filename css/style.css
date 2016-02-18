@@ -10,6 +10,23 @@ body {
     line-height: 1.5;
 }
 
+a {
+    color: #403d4a;
+}
+
+a:active {
+    color: #4c4955;
+}
+
+a:hover {
+    color: #57555e;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #a5b08e;
+}
+
 img {
     /*float: right;*/
     margin-top: 0;
