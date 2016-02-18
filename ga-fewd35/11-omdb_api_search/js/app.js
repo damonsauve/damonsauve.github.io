@@ -54,7 +54,7 @@ $(document).ready(function() {
 
             $.ajax({
                 type: "GET",
-                url: "http://www.omdbapi.com/?t=" + title,
+                url: "https://www.omdbapi.com/?t=" + title,
                 success: function(data) {
 
                     //console.log(data);
