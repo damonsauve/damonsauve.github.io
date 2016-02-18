@@ -31,10 +31,10 @@ img {
     /*float: right;*/
     margin-top: 0;
     margin-right: 0;
-    margin-bottom: 20px;
+    margin-bottom: 0;
     margin-left: 0;
     border: 1px solid #666;
-    padding: 4px;
+    /*padding: 4px;*/
     width: 200px;
     /*height: 200px;*/
 }
@@ -82,7 +82,7 @@ h4 {
     background-color: #fff;
     color: #6c6056;
     padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 30px;
 }
 
 .footer-row {
