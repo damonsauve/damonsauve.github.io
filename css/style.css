@@ -96,9 +96,9 @@ h4 {
     padding-bottom: 20px;
 }
 
-
 /* Small devices (tablets, 768px and up) */
 /* iPad in portrait mode */
+
 @media (min-width : 768px) {
 
     body {
@@ -113,6 +113,7 @@ h4 {
 
 /* Medium devices (desktops, 992px and up) */
 /* iPad in landscape mode */
+
 @media (min-width : 992px) {
 
     body {
@@ -126,6 +127,7 @@ h4 {
 }
 
 /* Large devices (large desktops, 1200px and up) */
+
 @media (min-width : 1200px) {
 
     body {
@@ -138,8 +140,9 @@ h4 {
     }
 }
 
-
 /* http://stephen.io/mediaqueries/ */
+
+/* iPad in portrait mode */
 
 @media only screen
 and (min-device-width : 768px)
@@ -147,13 +150,16 @@ and (max-device-width : 1024px)
 and (orientation : portrait) {
 
     body {
+        font-size: 14px;
         background-color: red;
     }
 
     img {
-        width: 100px;
+        width: 190px;
     }
 }
+
+/* iPad in landscape mode */
 
 @media only screen
 and (min-device-width : 768px)
@@ -161,10 +167,11 @@ and (max-device-width : 1024px)
 and (orientation : landscape) {
 
     body {
+        font-size: 14px;
         background-color: orange;
     }
 
     img {
-        width: 100px;
+        width: 190px;
     }
 }
