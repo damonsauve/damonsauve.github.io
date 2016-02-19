@@ -30,7 +30,14 @@
     </div>
 
     <div class="row">
+
     {{#each project}}
+<!--  {{@index}}  -->
+
+    {{#everyOther @index 2 }}
+    {{else}}
+    {{/everyOther}}
+
         <div class="col-md-6 border level-3">
             <div class="row">
                 <div class="col-sm-4 col-md-5 border">
@@ -56,14 +63,13 @@
                 </div>
             </div>
         </div>
-        {{else}}
-        <div class="col-md-6 border level-3">
-            <div class="row">
-                <div class="col-sm-4 col-md-5 border">
-                </div>
-            </div>
-        </div>
-        {{/each}}
+    {{#everyOther @index 2 }}
+    </div><!--  {{@index}}  -->
+    <div class="row"><!--  {{@index}}  -->
+    {{else}}
+    {{/everyOther}}
+
+    {{/each}}
     </div>
 </script>
 </div>

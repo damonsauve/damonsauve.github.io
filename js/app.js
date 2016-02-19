@@ -29,7 +29,7 @@ $(document).ready(function() {
                         objectives: [
                             "Two-column Bootstrap layout scales down to single column for small screens.",
                             "Media queries modify font size and image widths across all screens to maximize readability.",
-                            "Project data stored as JSON in JavaScript powers Handlebars template engine.",
+                            "Handlebars templates powered by project content stored as JSON object.",
                         ],
                     }
                 ]
@@ -47,11 +47,11 @@ $(document).ready(function() {
                         title: "Spotify API Search",
                         description: "Using jQuery/Ajax, query the <a href=\"https://developer.spotify.com/web-api/\" target=\"_blank\">Spotify Web API</a> by keyword and return related tracks.",
                         objectives: [
-                            "Send jQuery/Ajax <code>GET</code> request to API",
-                            "Display results with simple Handlebars template",
-                            "Show messaging if search returns zero results",
-                            "Paginate results using JavaScript",
-                            "Enable in-browser audio preview using HTML5",
+                            "Send jQuery/Ajax <code>GET</code> request to API.",
+                            "Display results with simple Handlebars template.",
+                            "Show messaging if search returns zero results.",
+                            "Paginate results using JavaScript.",
+                            "Enable in-browser audio preview using HTML5.",
                         ],
                         links: [
                             "<a href=\"https://github.com/damonsauve/damonsauve.github.io/tree/master/projects/ga-fewd35/12-spotify_api_search\" target=\"_blank\">GitHub Code</a>",
@@ -64,12 +64,12 @@ $(document).ready(function() {
                             src: "img/ga-fewd35/11-omdb_api_search.png",
                         },
                         title: "OMDB API Search",
-                        description: "Using jQuery/Ajax, build a simple form to query the <a href=\"http://www.omdbapi.com/\" target=\"_blank\">Open Music Database API</a> by title and display the result",
+                        description: "Using jQuery/Ajax, build a simple form to query the <a href=\"http://www.omdbapi.com/\" target=\"_blank\">Open Music Database API</a> by title and display the result.",
                         objectives: [
-                            "Send jQuery/Ajax <code>GET</code> request to API",
-                            "Include a button to clear form input using jQuery",
-                            "Display results with simple Handlebars template",
-                            "Show messaging if search returns zero results",
+                            "Send jQuery/Ajax <code>GET</code> request to API.",
+                            "Include a button to clear form input using jQuery.",
+                            "Display results with simple Handlebars template.",
+                            "Show messaging if search returns zero results.",
                         ],
                         links: [
                             "<a href=\"https://github.com/damonsauve/damonsauve.github.io/tree/master/projects/ga-fewd35/11-omdb_api_search\" target=\"_blank\">GitHub Code</a>",
@@ -117,9 +117,9 @@ $(document).ready(function() {
                             src: 'img/ga-fewd35/07-amazon_wish_list.png',
                         },
                         title: 'Amazon Wish List',
-                        description: 'Using Bootstrap components and CSS, transform the layout of an <a href="http://damonsauve.github.io/projects/ga-fewd35/07-amazon_wish_list/index-old.html" name="" target="_blank">existing web page</a>',
+                        description: 'Using Bootstrap components and CSS, transform the layout of an <a href="http://damonsauve.github.io/projects/ga-fewd35/07-amazon_wish_list/index-old.html" target="_blank">existing web page</a>.',
                         objectives: [
-                            'Two-column layout scales down to one column for small screens',
+                            'Two-column layout scales down to one column for small screens.',
                             'Tool tips provide contextual link info.',
                             'Product comments displayed in modal window.',
                             '"Hide Carousel" button uses Collapse plugin.',
@@ -138,7 +138,7 @@ $(document).ready(function() {
                         description: 'Using jQuery, transform existing navigation menu for mobile devices.',
                         objectives: [
                             'Trigger responsive jQuery functions via a small-screen media query that changes a CSS property.',
-                            'Modify nav-menu CSS properties and Bootstrap columns using jQuery methods',
+                            'Modify nav-menu CSS properties and Bootstrap columns using jQuery methods.',
                         ],
                         links: [
                             '<a href="https://github.com/damonsauve/damonsauve.github.io/tree/master/projects/ga-fewd35/08-responsive_header_redesign" target="_blank">GitHub Code</a>',
@@ -153,7 +153,7 @@ $(document).ready(function() {
                         title: 'Tic Tac Toe',
                         description: 'Build a tic-tac-toe game from scratch using HTML, CSS, and jQuery.',
                         objectives: [
-                            'Track game play using jQuery click events and selectors',
+                            'Track game play using jQuery click events and selectors.',
                             'Use JavaSCript to handle application logic (ie, check for win).',
                         ],
                         links: [
@@ -201,7 +201,7 @@ $(document).ready(function() {
                         title: 'Score Keeper',
                         description: 'Create a simple score-keeper application using JavaScript.',
                         objectives: [
-                            'Dynamically change HTML using JavaScript events and selectors',
+                            'Dynamically change HTML using JavaScript events and selectors.',
                             'Use JavaScript to handle application logic (ie, score cannot go below zero).',
                         ],
                         links: [
