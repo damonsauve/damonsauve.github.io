@@ -103,7 +103,7 @@ h4 {
 
     body {
         font-size: 14px;
-        background-color: yellow;
+        /*background-color: yellow;*/
     }
 
     img {
@@ -118,7 +118,7 @@ h4 {
 
     body {
         font-size: 14px;
-        background-color: green;
+        /*background-color: green;*/
     }
 
     img {
@@ -132,7 +132,7 @@ h4 {
 
     body {
         font-size: 14px;
-        background-color: blue;
+        /*background-color: blue;*/
     }
 
     img {
@@ -151,7 +151,7 @@ and (orientation : portrait) {
 
     body {
         font-size: 16px;
-        background-color: red;
+        /*background-color: red;*/
     }
 
     img {
@@ -168,7 +168,7 @@ and (orientation : landscape) {
 
     body {
         font-size: 16px;
-        background-color: orange;
+        /*background-color: orange;*/
     }
 
     img {
