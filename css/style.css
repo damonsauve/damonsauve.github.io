@@ -91,6 +91,8 @@ h4 {
 }
 
 .footer-row {
+    background-color: #b2b1b4;
+    color: #646269;
     border-width: 0px 5px 5px 5px;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -102,8 +104,8 @@ h4 {
 @media (min-width : 768px) {
 
     body {
-        font-size: 14px;
         /*background-color: yellow;*/
+        font-size: 14px;
     }
 
     img {
@@ -117,8 +119,8 @@ h4 {
 @media (min-width : 992px) {
 
     body {
-        font-size: 14px;
         /*background-color: green;*/
+        font-size: 14px;
     }
 
     img {
@@ -131,8 +133,8 @@ h4 {
 @media (min-width : 1200px) {
 
     body {
-        font-size: 14px;
         /*background-color: blue;*/
+        font-size: 14px;
     }
 
     img {
@@ -150,8 +152,8 @@ and (max-device-width : 1024px)
 and (orientation : portrait) {
 
     body {
-        font-size: 16px;
         /*background-color: red;*/
+        font-size: 16px;
     }
 
     img {
@@ -167,8 +169,8 @@ and (max-device-width : 1024px)
 and (orientation : landscape) {
 
     body {
-        font-size: 16px;
         /*background-color: orange;*/
+        font-size: 16px;
     }
 
     img {
