@@ -12,11 +12,11 @@ body {
 }
 
 a {
-    color: #403d4a;
+    color: #57555e;
 }
 
 a:active {
-    color: #4c4955;
+    color: #403d4a;
 }
 
 a:hover {
@@ -25,7 +25,7 @@ a:hover {
 }
 
 a:visited {
-    color: #a5b08e;
+    color: #99938e;
 }
 
 img {
@@ -53,6 +53,25 @@ dl {
 
 dd, dt {
     line-height: 1.5;
+}
+
+ul {
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
+    margin-bottom: 10px;
+    margin-left: 0;   /*Internet Explorer and Opera opted to create the indent with the left margin*/
+    padding-left: .8em;  /*Mozilla/Netscape use padding*/
+    text-indent: -.8em;
+    line-height: 1.5;
+}
+
+ul li:before {
+    content: "\0BB \0020";
+    padding-left: 2px;
+    padding-right: 0px;
+    color: #6c6056;
+    font-size: 1em;
 }
 
 h4 {
